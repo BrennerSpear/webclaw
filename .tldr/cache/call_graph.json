@@ -1,76 +1,10 @@
 {
   "edges": [
     {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-settings.ts",
-      "from_func": "useChatSettings",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "readError"
-    },
-    {
-      "from_file": "apps/webclaw/src/components/ui/input.tsx",
-      "from_func": "Input",
-      "to_file": "apps/webclaw/src/lib/utils.ts",
-      "to_func": "cn"
-    },
-    {
-      "from_file": "apps/webclaw/src/server/gateway.ts",
-      "from_func": "gatewayConnectCheck",
-      "to_file": "apps/webclaw/src/server/gateway.ts",
-      "to_func": "createGatewayWaiter"
-    },
-    {
-      "from_file": "apps/webclaw/src/server/gateway.ts",
-      "from_func": "onError",
-      "to_file": "apps/webclaw/src/server/gateway.ts",
-      "to_func": "cleanup"
-    },
-    {
       "from_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
-      "from_func": "updateHistoryMessageByClientId",
+      "from_func": "removeHistoryMessageByClientId",
       "to_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
       "to_func": "updateHistoryMessages"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
-      "from_func": "sendMessage",
-      "to_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
-      "to_func": "updateHistoryMessageByClientId"
-    },
-    {
-      "from_file": "apps/webclaw/src/server/gateway.ts",
-      "from_func": "gatewayRpc",
-      "to_file": "apps/webclaw/src/server/gateway.ts",
-      "to_func": "buildConnectParams"
-    },
-    {
-      "from_file": "apps/webclaw/src/server/gateway.ts",
-      "from_func": "gatewayConnectCheck",
-      "to_file": "apps/webclaw/src/server/gateway.ts",
-      "to_func": "wsOpen"
-    },
-    {
-      "from_file": "apps/webclaw/src/routes/api/sessions.ts",
-      "from_func": "normalizeSessions",
-      "to_file": "apps/webclaw/src/routes/api/sessions.ts",
-      "to_func": "deriveFriendlyIdFromKey"
-    },
-    {
-      "from_file": "apps/webclaw/src/server/gateway.ts",
-      "from_func": "gatewayRpc",
-      "to_file": "apps/webclaw/src/server/gateway.ts",
-      "to_func": "wsClose"
-    },
-    {
-      "from_file": "apps/webclaw/src/components/prompt-kit/prompt-input.tsx",
-      "from_func": "handleChange",
-      "to_file": "apps/webclaw/src/components/prompt-kit/prompt-input.tsx",
-      "to_func": "adjustHeight"
-    },
-    {
-      "from_file": "apps/webclaw/src/hooks/use-export.ts",
-      "from_func": "useExport",
-      "to_file": "apps/webclaw/src/hooks/use-export.ts",
-      "to_func": "downloadFile"
     },
     {
       "from_file": "apps/webclaw/src/hooks/use-export.ts",
@@ -79,88 +13,22 @@
       "to_func": "textFromMessage"
     },
     {
-      "from_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
-      "from_func": "fetchSessions",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "readError"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/components/message-item.tsx",
-      "from_func": "rawTimestamp",
-      "to_file": "apps/webclaw/src/screens/chat/components/message-item.tsx",
-      "to_func": "normalizeTimestamp"
-    },
-    {
-      "from_file": "apps/webclaw/src/components/attachment-button.tsx",
-      "from_func": "compressImage",
-      "to_file": "apps/webclaw/src/components/attachment-button.tsx",
-      "to_func": "isCanvasSupported"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
-      "from_func": "sendMessage",
-      "to_file": "apps/webclaw/src/screens/chat/pending-send.ts",
-      "to_func": "setPendingGeneration"
-    },
-    {
-      "from_file": "apps/webclaw/src/server/gateway.ts",
-      "from_func": "onOpen",
-      "to_file": "apps/webclaw/src/server/gateway.ts",
-      "to_func": "cleanup"
+      "from_file": "apps/webclaw/src/screens/chat/components/message-timestamp.tsx",
+      "from_func": "MessageTimestamp",
+      "to_file": "apps/webclaw/src/screens/chat/components/message-timestamp.tsx",
+      "to_func": "formatShort"
     },
     {
       "from_file": "apps/webclaw/src/hooks/use-export.ts",
-      "from_func": "toMarkdown",
+      "from_func": "useExport",
       "to_file": "apps/webclaw/src/hooks/use-export.ts",
-      "to_func": "roleLabel"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-rename-session.ts",
-      "from_func": "useRenameSession",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "readError"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-history.ts",
-      "from_func": "useChatHistory",
-      "to_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
-      "to_func": "fetchHistory"
-    },
-    {
-      "from_file": "apps/webclaw/src/components/attachment-button.tsx",
-      "from_func": "compressImage",
-      "to_file": "apps/webclaw/src/components/attachment-button.tsx",
-      "to_func": "cleanup"
-    },
-    {
-      "from_file": "apps/webclaw/src/routes/index.tsx",
-      "from_func": "IndexRoute",
-      "to_file": "apps/webclaw/src/routes/index.tsx",
-      "to_func": "navigate"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
-      "from_func": "fetchGatewayStatus",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "readError"
-    },
-    {
-      "from_file": "apps/webclaw/src/hooks/use-chat-settings.ts",
-      "from_func": "useResolvedTheme",
-      "to_file": "apps/webclaw/src/hooks/use-chat-settings.ts",
-      "to_func": "useChatSettingsStore"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-delete-session.ts",
-      "from_func": "useDeleteSession",
-      "to_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
-      "to_func": "removeSessionFromCache"
+      "to_func": "sanitizeFilename"
     },
     {
       "from_file": "apps/webclaw/src/hooks/use-export.ts",
-      "from_func": "toMarkdown",
+      "from_func": "useExport",
       "to_file": "apps/webclaw/src/hooks/use-export.ts",
-      "to_func": "formatTimestamp"
+      "to_func": "toMarkdown"
     },
     {
       "from_file": "apps/webclaw/src/screens/chat/components/message-item.tsx",
@@ -169,100 +37,46 @@
       "to_func": "getToolCallsFromMessage"
     },
     {
+      "from_file": "apps/webclaw/src/components/ui/button.tsx",
+      "from_func": "Button",
+      "to_file": "apps/webclaw/src/components/ui/button.tsx",
+      "to_func": "buttonVariants"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/components/message-item.tsx",
+      "from_func": "toolCallsSignature",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "getToolCallsFromMessage"
+    },
+    {
+      "from_file": "apps/webclaw/src/server/gateway.ts",
+      "from_func": "gatewayConnectCheck",
+      "to_file": "apps/webclaw/src/server/gateway.ts",
+      "to_func": "getGatewayConfig"
+    },
+    {
       "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-history.ts",
       "from_func": "useChatHistory",
+      "to_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
+      "to_func": "fetchHistory"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
+      "from_func": "sendMessage",
+      "to_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
+      "to_func": "appendHistoryMessage"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-rename-session.ts",
+      "from_func": "useRenameSession",
       "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "textFromMessage"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "from_func": "getMessageTimestamp",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "normalizeTimestamp"
-    },
-    {
-      "from_file": "apps/webclaw/src/components/attachment-button.tsx",
-      "from_func": "AttachmentButton",
-      "to_file": "apps/webclaw/src/components/attachment-button.tsx",
-      "to_func": "compressImage"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-sessions.ts",
-      "from_func": "useChatSessions",
-      "to_file": "apps/webclaw/src/screens/chat/pending-send.ts",
-      "to_func": "isRecentSession"
+      "to_func": "readError"
     },
     {
       "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-mobile.ts",
       "from_func": "useChatMobile",
-      "to_file": "apps/webclaw/src/screens/chat/chat-ui.ts",
-      "to_func": "setChatUiState"
-    },
-    {
-      "from_file": "apps/webclaw/src/server/gateway.ts",
-      "from_func": "gatewayConnectCheck",
-      "to_file": "apps/webclaw/src/server/gateway.ts",
-      "to_func": "buildConnectParams"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-delete-session.ts",
-      "from_func": "useDeleteSession",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "readError"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
-      "from_func": "sendMessage",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "readError"
-    },
-    {
-      "from_file": "apps/webclaw/src/hooks/use-export.ts",
-      "from_func": "toJSON",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "getMessageTimestamp"
-    },
-    {
-      "from_file": "apps/webclaw/src/server/gateway.ts",
-      "from_func": "gatewayConnectCheck",
-      "to_file": "apps/webclaw/src/server/gateway.ts",
-      "to_func": "wsClose"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
-      "from_func": "sendMessage",
-      "to_file": "apps/webclaw/src/screens/chat/chat-screen-utils.ts",
-      "to_func": "createOptimisticMessage"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-history.ts",
-      "from_func": "mergeOptimisticHistoryMessages",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "getMessageTimestamp"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/pending-send.ts",
-      "from_func": "clearPendingSendForSession",
-      "to_file": "apps/webclaw/src/screens/chat/pending-send.ts",
-      "to_func": "resetPendingSend"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-sessions.ts",
-      "from_func": "useChatSessions",
-      "to_file": "apps/webclaw/src/screens/chat/session-tombstones.ts",
-      "to_func": "filterSessionsWithTombstones"
-    },
-    {
-      "from_file": "apps/webclaw/src/hooks/use-export.ts",
-      "from_func": "toPlainText",
-      "to_file": "apps/webclaw/src/hooks/use-export.ts",
-      "to_func": "roleLabel"
-    },
-    {
-      "from_file": "apps/webclaw/src/components/prompt-kit/scroll-button.tsx",
-      "from_func": "handleScroll",
-      "to_file": "apps/webclaw/src/components/prompt-kit/scroll-button.tsx",
-      "to_func": "checkIsAtBottom"
+      "to_file": "apps/webclaw/src/screens/chat/hooks/use-chat-mobile.ts",
+      "to_func": "update"
     },
     {
       "from_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
@@ -271,22 +85,28 @@
       "to_func": "readError"
     },
     {
-      "from_file": "apps/webclaw/src/hooks/use-export.ts",
-      "from_func": "toPlainText",
-      "to_file": "apps/webclaw/src/hooks/use-export.ts",
-      "to_func": "formatTimestamp"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-delete-session.ts",
-      "from_func": "useDeleteSession",
+      "from_file": "apps/webclaw/src/routes/chat/$sessionKey.tsx",
+      "from_func": "ChatRoute",
       "to_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
-      "to_func": "clearHistoryMessages"
+      "to_func": "moveHistoryMessages"
     },
     {
-      "from_file": "apps/webclaw/src/server/gateway.ts",
-      "from_func": "gatewayRpc",
-      "to_file": "apps/webclaw/src/server/gateway.ts",
-      "to_func": "wsOpen"
+      "from_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
+      "from_func": "sendMessage",
+      "to_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
+      "to_func": "updateHistoryMessageByClientId"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
+      "from_func": "fetchGatewayStatus",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "readError"
+    },
+    {
+      "from_file": "apps/webclaw/src/components/attachment-button.tsx",
+      "from_func": "compressImage",
+      "to_file": "apps/webclaw/src/components/attachment-button.tsx",
+      "to_func": "cleanup"
     },
     {
       "from_file": "apps/webclaw/src/screens/chat/utils.ts",
@@ -295,16 +115,88 @@
       "to_func": "deriveFriendlyIdFromKey"
     },
     {
-      "from_file": "apps/webclaw/src/server/gateway.ts",
-      "from_func": "gatewayRpc",
-      "to_file": "apps/webclaw/src/server/gateway.ts",
-      "to_func": "getGatewayConfig"
+      "from_file": "apps/webclaw/src/hooks/use-export.ts",
+      "from_func": "toMarkdown",
+      "to_file": "apps/webclaw/src/hooks/use-export.ts",
+      "to_func": "formatTimestamp"
     },
     {
-      "from_file": "apps/webclaw/src/routes/chat/$sessionKey.tsx",
-      "from_func": "ChatRoute",
+      "from_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
+      "from_func": "sendMessage",
+      "to_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
+      "to_func": "navigate"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-delete-session.ts",
+      "from_func": "useDeleteSession",
       "to_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
-      "to_func": "moveHistoryMessages"
+      "to_func": "removeSessionFromCache"
+    },
+    {
+      "from_file": "apps/webclaw/src/routes/index.tsx",
+      "from_func": "IndexRoute",
+      "to_file": "apps/webclaw/src/routes/index.tsx",
+      "to_func": "navigate"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-delete-session.ts",
+      "from_func": "useDeleteSession",
+      "to_file": "apps/webclaw/src/screens/chat/pending-send.ts",
+      "to_func": "resetPendingSend"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-history.ts",
+      "from_func": "useChatHistory",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "textFromMessage"
+    },
+    {
+      "from_file": "apps/webclaw/src/components/prompt-kit/prompt-input.tsx",
+      "from_func": "handleRef",
+      "to_file": "apps/webclaw/src/components/prompt-kit/prompt-input.tsx",
+      "to_func": "adjustHeight"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-settings.ts",
+      "from_func": "useChatSettings",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "readError"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-delete-session.ts",
+      "from_func": "useDeleteSession",
+      "to_file": "apps/webclaw/src/screens/chat/session-tombstones.ts",
+      "to_func": "markSessionDeleted"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/pending-send.ts",
+      "from_func": "clearPendingSendForSession",
+      "to_file": "apps/webclaw/src/screens/chat/pending-send.ts",
+      "to_func": "resetPendingSend"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
+      "from_func": "appendHistoryMessage",
+      "to_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
+      "to_func": "updateHistoryMessages"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-sessions.ts",
+      "from_func": "useChatSessions",
+      "to_file": "apps/webclaw/src/screens/chat/pending-send.ts",
+      "to_func": "isRecentSession"
+    },
+    {
+      "from_file": "apps/webclaw/src/components/attachment-button.tsx",
+      "from_func": "compressImage",
+      "to_file": "apps/webclaw/src/components/attachment-button.tsx",
+      "to_func": "isCanvasSupported"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "from_func": "getMessageTimestamp",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "normalizeTimestamp"
     },
     {
       "from_file": "apps/webclaw/src/hooks/use-export.ts",
@@ -313,16 +205,166 @@
       "to_func": "toJSON"
     },
     {
+      "from_file": "apps/webclaw/src/routes/api/sessions.ts",
+      "from_func": "normalizeSessions",
+      "to_file": "apps/webclaw/src/routes/api/sessions.ts",
+      "to_func": "deriveFriendlyIdFromKey"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-history.ts",
+      "from_func": "useChatHistory",
+      "to_file": "apps/webclaw/src/screens/chat/hooks/use-chat-history.ts",
+      "to_func": "mergeOptimisticHistoryMessages"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-sessions.ts",
+      "from_func": "useChatSessions",
+      "to_file": "apps/webclaw/src/screens/chat/session-tombstones.ts",
+      "to_func": "filterSessionsWithTombstones"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
+      "from_func": "sendMessage",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "isMissingGatewayAuth"
+    },
+    {
       "from_file": "apps/webclaw/src/server/gateway.ts",
-      "from_func": "wsOpen",
+      "from_func": "gatewayRpc",
       "to_file": "apps/webclaw/src/server/gateway.ts",
-      "to_func": "cleanup"
+      "to_func": "getGatewayConfig"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-measurements.ts",
+      "from_func": "useChatMeasurements",
+      "to_file": "apps/webclaw/src/screens/chat/hooks/use-chat-measurements.ts",
+      "to_func": "applySizes"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
+      "from_func": "sendMessage",
+      "to_file": "apps/webclaw/src/screens/chat/chat-screen-utils.ts",
+      "to_func": "createOptimisticMessage"
+    },
+    {
+      "from_file": "apps/webclaw/src/components/prompt-kit/tool.tsx",
+      "from_func": "renderValue",
+      "to_file": "apps/webclaw/src/components/prompt-kit/tool.tsx",
+      "to_func": "formatValue"
     },
     {
       "from_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
       "from_func": "sendMessage",
       "to_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
-      "to_func": "appendHistoryMessage"
+      "to_func": "updateSessionLastMessage"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/components/message-item.tsx",
+      "from_func": "rawTimestamp",
+      "to_file": "apps/webclaw/src/screens/chat/components/message-item.tsx",
+      "to_func": "normalizeTimestamp"
+    },
+    {
+      "from_file": "apps/webclaw/src/server/gateway.ts",
+      "from_func": "gatewayRpc",
+      "to_file": "apps/webclaw/src/server/gateway.ts",
+      "to_func": "createGatewayWaiter"
+    },
+    {
+      "from_file": "apps/webclaw/src/server/gateway.ts",
+      "from_func": "gatewayConnectCheck",
+      "to_file": "apps/webclaw/src/server/gateway.ts",
+      "to_func": "wsOpen"
+    },
+    {
+      "from_file": "apps/webclaw/src/hooks/use-export.ts",
+      "from_func": "formatTimestamp",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "getMessageTimestamp"
+    },
+    {
+      "from_file": "apps/webclaw/src/hooks/use-export.ts",
+      "from_func": "toMarkdown",
+      "to_file": "apps/webclaw/src/hooks/use-export.ts",
+      "to_func": "roleLabel"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/components/message-item.tsx",
+      "from_func": "toolResultsSignature",
+      "to_file": "apps/webclaw/src/screens/chat/components/message-item.tsx",
+      "to_func": "toolResultSignature"
+    },
+    {
+      "from_file": "apps/webclaw/src/hooks/use-export.ts",
+      "from_func": "toJSON",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "textFromMessage"
+    },
+    {
+      "from_file": "apps/webclaw/src/components/prompt-kit/prompt-input.tsx",
+      "from_func": "handleChange",
+      "to_file": "apps/webclaw/src/components/prompt-kit/prompt-input.tsx",
+      "to_func": "adjustHeight"
+    },
+    {
+      "from_file": "apps/webclaw/src/components/prompt-kit/scroll-button.tsx",
+      "from_func": "handleScroll",
+      "to_file": "apps/webclaw/src/components/prompt-kit/scroll-button.tsx",
+      "to_func": "checkIsAtBottom"
+    },
+    {
+      "from_file": "apps/webclaw/src/server/gateway.ts",
+      "from_func": "gatewayRpc",
+      "to_file": "apps/webclaw/src/server/gateway.ts",
+      "to_func": "buildConnectParams"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
+      "from_func": "fetchSessions",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "normalizeSessions"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-mobile.ts",
+      "from_func": "useChatMobile",
+      "to_file": "apps/webclaw/src/screens/chat/chat-ui.ts",
+      "to_func": "setChatUiState"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-history.ts",
+      "from_func": "mergeOptimisticHistoryMessages",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "textFromMessage"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/components/message-timestamp.tsx",
+      "from_func": "formatShort",
+      "to_file": "apps/webclaw/src/screens/chat/components/message-timestamp.tsx",
+      "to_func": "isSameDay"
+    },
+    {
+      "from_file": "apps/webclaw/src/server/gateway.ts",
+      "from_func": "gatewayConnectCheck",
+      "to_file": "apps/webclaw/src/server/gateway.ts",
+      "to_func": "wsClose"
+    },
+    {
+      "from_file": "apps/webclaw/src/hooks/use-export.ts",
+      "from_func": "toMarkdown",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "textFromMessage"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-delete-session.ts",
+      "from_func": "useDeleteSession",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "readError"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-delete-session.ts",
+      "from_func": "useDeleteSession",
+      "to_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
+      "to_func": "clearHistoryMessages"
     },
     {
       "from_file": "apps/webclaw/src/components/attachment-button.tsx",
@@ -333,26 +375,8 @@
     {
       "from_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
       "from_func": "sendMessage",
-      "to_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
-      "to_func": "updateSessionLastMessage"
-    },
-    {
-      "from_file": "apps/webclaw/src/hooks/use-pinned-sessions.ts",
-      "from_func": "usePinnedSessions",
-      "to_file": "apps/webclaw/src/hooks/use-pinned-sessions.ts",
-      "to_func": "usePinnedSessionsStore"
-    },
-    {
-      "from_file": "apps/webclaw/src/components/prompt-kit/tool.tsx",
-      "from_func": "Tool",
-      "to_file": "apps/webclaw/src/components/prompt-kit/tool.tsx",
-      "to_func": "formatValue"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
-      "from_func": "sendMessage",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "isMissingGatewayAuth"
+      "to_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
+      "to_func": "streamStart"
     },
     {
       "from_file": "apps/webclaw/src/screens/chat/components/chat-sidebar.tsx",
@@ -361,76 +385,118 @@
       "to_func": "navigate"
     },
     {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-mobile.ts",
-      "from_func": "useChatMobile",
-      "to_file": "apps/webclaw/src/screens/chat/hooks/use-chat-mobile.ts",
-      "to_func": "update"
+      "from_file": "apps/webclaw/src/components/ui/button.tsx",
+      "from_func": "Button",
+      "to_file": "apps/webclaw/src/lib/utils.ts",
+      "to_func": "cn"
     },
     {
-      "from_file": "apps/webclaw/src/routes/chat/$sessionKey.tsx",
-      "from_func": "ChatRoute",
-      "to_file": "apps/webclaw/src/routes/chat/$sessionKey.tsx",
-      "to_func": "navigate"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-history.ts",
-      "from_func": "useChatHistory",
-      "to_file": "apps/webclaw/src/screens/chat/hooks/use-chat-history.ts",
-      "to_func": "mergeOptimisticHistoryMessages"
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-delete-session.ts",
+      "from_func": "useDeleteSession",
+      "to_file": "apps/webclaw/src/screens/chat/session-tombstones.ts",
+      "to_func": "clearSessionDeleted"
     },
     {
       "from_file": "apps/webclaw/src/hooks/use-export.ts",
-      "from_func": "useExport",
+      "from_func": "toPlainText",
       "to_file": "apps/webclaw/src/hooks/use-export.ts",
-      "to_func": "sanitizeFilename"
+      "to_func": "formatTimestamp"
     },
     {
-      "from_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
-      "from_func": "appendHistoryMessage",
-      "to_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
-      "to_func": "updateHistoryMessages"
+      "from_file": "apps/webclaw/src/server/gateway.ts",
+      "from_func": "onError",
+      "to_file": "apps/webclaw/src/server/gateway.ts",
+      "to_func": "cleanup"
     },
     {
       "from_file": "apps/webclaw/src/server/gateway.ts",
       "from_func": "gatewayRpc",
       "to_file": "apps/webclaw/src/server/gateway.ts",
-      "to_func": "createGatewayWaiter"
+      "to_func": "wsOpen"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
+      "from_func": "sendMessage",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "readError"
+    },
+    {
+      "from_file": "apps/webclaw/src/components/ui/input.tsx",
+      "from_func": "Input",
+      "to_file": "apps/webclaw/src/lib/utils.ts",
+      "to_func": "cn"
     },
     {
       "from_file": "apps/webclaw/src/screens/chat/components/message-timestamp.tsx",
       "from_func": "MessageTimestamp",
       "to_file": "apps/webclaw/src/screens/chat/components/message-timestamp.tsx",
-      "to_func": "formatShort"
+      "to_func": "formatFull"
+    },
+    {
+      "from_file": "apps/webclaw/src/hooks/use-export.ts",
+      "from_func": "useExport",
+      "to_file": "apps/webclaw/src/hooks/use-export.ts",
+      "to_func": "downloadFile"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-settings.ts",
+      "from_func": "useChatSettings",
+      "to_file": "apps/webclaw/src/screens/chat/hooks/use-chat-settings.ts",
+      "to_func": "openSettings"
+    },
+    {
+      "from_file": "apps/webclaw/src/components/prompt-kit/tool.tsx",
+      "from_func": "Tool",
+      "to_file": "apps/webclaw/src/components/prompt-kit/tool.tsx",
+      "to_func": "formatValue"
+    },
+    {
+      "from_file": "apps/webclaw/src/server/gateway.ts",
+      "from_func": "wsOpen",
+      "to_file": "apps/webclaw/src/server/gateway.ts",
+      "to_func": "cleanup"
     },
     {
       "from_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
-      "from_func": "removeHistoryMessageByClientId",
+      "from_func": "fetchSessions",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "readError"
+    },
+    {
+      "from_file": "apps/webclaw/src/components/attachment-button.tsx",
+      "from_func": "AttachmentButton",
+      "to_file": "apps/webclaw/src/components/attachment-button.tsx",
+      "to_func": "compressImage"
+    },
+    {
+      "from_file": "apps/webclaw/src/hooks/use-export.ts",
+      "from_func": "toJSON",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "getMessageTimestamp"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
+      "from_func": "updateHistoryMessageByClientId",
       "to_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
       "to_func": "updateHistoryMessages"
     },
     {
-      "from_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
-      "from_func": "sendMessage",
-      "to_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
-      "to_func": "navigate"
+      "from_file": "apps/webclaw/src/server/gateway.ts",
+      "from_func": "gatewayConnectCheck",
+      "to_file": "apps/webclaw/src/server/gateway.ts",
+      "to_func": "createGatewayWaiter"
     },
     {
-      "from_file": "apps/webclaw/src/components/prompt-kit/code-block/utils.ts",
-      "from_func": "resolveLanguage",
-      "to_file": "apps/webclaw/src/components/prompt-kit/code-block/utils.ts",
-      "to_func": "normalizeLanguage"
-    },
-    {
-      "from_file": "apps/webclaw/src/components/prompt-kit/prompt-input.tsx",
-      "from_func": "handleRef",
-      "to_file": "apps/webclaw/src/components/prompt-kit/prompt-input.tsx",
-      "to_func": "adjustHeight"
+      "from_file": "apps/webclaw/src/server/gateway.ts",
+      "from_func": "gatewayRpc",
+      "to_file": "apps/webclaw/src/server/gateway.ts",
+      "to_func": "wsClose"
     },
     {
       "from_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
       "from_func": "sendMessage",
-      "to_file": "apps/webclaw/src/screens/chat/chat-screen.tsx",
-      "to_func": "streamStart"
+      "to_file": "apps/webclaw/src/screens/chat/pending-send.ts",
+      "to_func": "setPendingGeneration"
     },
     {
       "from_file": "apps/webclaw/src/hooks/use-export.ts",
@@ -439,10 +505,34 @@
       "to_func": "toPlainText"
     },
     {
+      "from_file": "apps/webclaw/src/hooks/use-chat-settings.ts",
+      "from_func": "useResolvedTheme",
+      "to_file": "apps/webclaw/src/hooks/use-chat-settings.ts",
+      "to_func": "useChatSettingsStore"
+    },
+    {
+      "from_file": "apps/webclaw/src/hooks/use-chat-settings.ts",
+      "from_func": "useChatSettings",
+      "to_file": "apps/webclaw/src/hooks/use-chat-settings.ts",
+      "to_func": "useChatSettingsStore"
+    },
+    {
+      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-history.ts",
+      "from_func": "mergeOptimisticHistoryMessages",
+      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
+      "to_func": "getMessageTimestamp"
+    },
+    {
       "from_file": "apps/webclaw/src/hooks/use-export.ts",
-      "from_func": "useExport",
+      "from_func": "toPlainText",
       "to_file": "apps/webclaw/src/hooks/use-export.ts",
-      "to_func": "toMarkdown"
+      "to_func": "roleLabel"
+    },
+    {
+      "from_file": "apps/webclaw/src/hooks/use-pinned-sessions.ts",
+      "from_func": "usePinnedSessions",
+      "to_file": "apps/webclaw/src/hooks/use-pinned-sessions.ts",
+      "to_func": "usePinnedSessionsStore"
     },
     {
       "from_file": "apps/webclaw/src/screens/chat/hooks/use-delete-session.ts",
@@ -454,119 +544,29 @@
       "from_file": "apps/webclaw/src/server/gateway.ts",
       "from_func": "gatewayConnectCheck",
       "to_file": "apps/webclaw/src/server/gateway.ts",
-      "to_func": "getGatewayConfig"
+      "to_func": "buildConnectParams"
     },
     {
-      "from_file": "apps/webclaw/src/screens/chat/components/message-timestamp.tsx",
-      "from_func": "MessageTimestamp",
-      "to_file": "apps/webclaw/src/screens/chat/components/message-timestamp.tsx",
-      "to_func": "formatFull"
+      "from_file": "apps/webclaw/src/components/prompt-kit/code-block/utils.ts",
+      "from_func": "resolveLanguage",
+      "to_file": "apps/webclaw/src/components/prompt-kit/code-block/utils.ts",
+      "to_func": "normalizeLanguage"
     },
     {
-      "from_file": "apps/webclaw/src/components/ui/button.tsx",
-      "from_func": "Button",
-      "to_file": "apps/webclaw/src/components/ui/button.tsx",
-      "to_func": "buttonVariants"
+      "from_file": "apps/webclaw/src/server/gateway.ts",
+      "from_func": "onOpen",
+      "to_file": "apps/webclaw/src/server/gateway.ts",
+      "to_func": "cleanup"
     },
     {
-      "from_file": "apps/webclaw/src/hooks/use-chat-settings.ts",
-      "from_func": "useChatSettings",
-      "to_file": "apps/webclaw/src/hooks/use-chat-settings.ts",
-      "to_func": "useChatSettingsStore"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-settings.ts",
-      "from_func": "useChatSettings",
-      "to_file": "apps/webclaw/src/screens/chat/hooks/use-chat-settings.ts",
-      "to_func": "openSettings"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-delete-session.ts",
-      "from_func": "useDeleteSession",
-      "to_file": "apps/webclaw/src/screens/chat/pending-send.ts",
-      "to_func": "resetPendingSend"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-delete-session.ts",
-      "from_func": "useDeleteSession",
-      "to_file": "apps/webclaw/src/screens/chat/session-tombstones.ts",
-      "to_func": "markSessionDeleted"
-    },
-    {
-      "from_file": "apps/webclaw/src/hooks/use-export.ts",
-      "from_func": "toMarkdown",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "textFromMessage"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-delete-session.ts",
-      "from_func": "useDeleteSession",
-      "to_file": "apps/webclaw/src/screens/chat/session-tombstones.ts",
-      "to_func": "clearSessionDeleted"
-    },
-    {
-      "from_file": "apps/webclaw/src/hooks/use-export.ts",
-      "from_func": "toJSON",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "textFromMessage"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-history.ts",
-      "from_func": "mergeOptimisticHistoryMessages",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "textFromMessage"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/hooks/use-chat-measurements.ts",
-      "from_func": "useChatMeasurements",
-      "to_file": "apps/webclaw/src/screens/chat/hooks/use-chat-measurements.ts",
-      "to_func": "applySizes"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/components/message-item.tsx",
-      "from_func": "toolCallsSignature",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "getToolCallsFromMessage"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/chat-queries.ts",
-      "from_func": "fetchSessions",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "normalizeSessions"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/components/message-timestamp.tsx",
-      "from_func": "formatShort",
-      "to_file": "apps/webclaw/src/screens/chat/components/message-timestamp.tsx",
-      "to_func": "isSameDay"
-    },
-    {
-      "from_file": "apps/webclaw/src/components/ui/button.tsx",
-      "from_func": "Button",
-      "to_file": "apps/webclaw/src/lib/utils.ts",
-      "to_func": "cn"
-    },
-    {
-      "from_file": "apps/webclaw/src/components/prompt-kit/tool.tsx",
-      "from_func": "renderValue",
-      "to_file": "apps/webclaw/src/components/prompt-kit/tool.tsx",
-      "to_func": "formatValue"
-    },
-    {
-      "from_file": "apps/webclaw/src/screens/chat/components/message-item.tsx",
-      "from_func": "toolResultsSignature",
-      "to_file": "apps/webclaw/src/screens/chat/components/message-item.tsx",
-      "to_func": "toolResultSignature"
-    },
-    {
-      "from_file": "apps/webclaw/src/hooks/use-export.ts",
-      "from_func": "formatTimestamp",
-      "to_file": "apps/webclaw/src/screens/chat/utils.ts",
-      "to_func": "getMessageTimestamp"
+      "from_file": "apps/webclaw/src/routes/chat/$sessionKey.tsx",
+      "from_func": "ChatRoute",
+      "to_file": "apps/webclaw/src/routes/chat/$sessionKey.tsx",
+      "to_func": "navigate"
     }
   ],
   "languages": [
     "typescript"
   ],
-  "timestamp": 1771072893.359338
+  "timestamp": 1771074203.618947
 }
